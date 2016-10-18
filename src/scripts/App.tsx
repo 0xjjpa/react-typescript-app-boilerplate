@@ -5,7 +5,7 @@ import { TSComponentExample, ComponentExample } from 'lib/ui';
 // scss
 import 'scss/App.scss';
 
-// images
+// images use commonjs "require"
 const logo = require('img/logo.svg');
 
 // props
@@ -14,7 +14,6 @@ interface AppProps {
 }
 export class App extends React.Component<AppProps, {}>{
   render() {
-    console.log('APP')
     return <div className="App">
       <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
