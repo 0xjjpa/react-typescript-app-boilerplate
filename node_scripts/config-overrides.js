@@ -12,11 +12,6 @@ function resolveApp(relativePath) {
 paths.appIndexJs = resolveApp('src/scripts/index.tsx');
 
 module.exports = function override(config) {
-  config.postcss = function () {
-    var autoprefixer = require('autoprefixer')
-    return [autoprefixer]
-  }
-
   // allow loading of scss files
   config.module.loaders.push({
     test: /\.scss$/,
