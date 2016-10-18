@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "lib/*": [
+                "./src/scripts/*"
+            ],
+            "bolt/*": [
+                "./src/scripts/bolt/*"
+            ]
+        },
+        "target": "es5",
+        "module": "commonjs",
+        "jsx": "react",
+        "typeRoots": [
+            "../node_modules/@types"
+        ],
+        "lib": [
+            "dom",
+            "es6"
+        ]
+    },
+    "include": [
+        "./lib.d.ts",
+        "./src/scripts/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
