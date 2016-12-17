@@ -4,9 +4,6 @@
         "paths": {
             "lib/*": [
                 "./src/scripts/*"
-            ],
-            "bolt/*": [
-                "./src/scripts/bolt/*"
             ]
         },
         "target": "es5",
